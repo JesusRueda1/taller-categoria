@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
@@ -28,10 +28,10 @@
                             <p>{{ $message }}</p>
                         </div>
                     @endif
-
+                    
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-striped table-hover">
+                            <table class="table table-striped table-hover" id="categoria">
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
@@ -69,3 +69,4 @@
         </div>
     </div>
 @endsection
+@yield('script')
