@@ -85,11 +85,12 @@
         </main>
     </div>
     @yield('script')
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
     <script>
-        $(document).ready(function () {
+        let categorias =  $(document).ready(function () {
             $('#categoria').DataTable({
                 "language": {
                 "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"
